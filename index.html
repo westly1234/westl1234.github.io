@@ -4,14 +4,50 @@
   <meta charset="utf-8">
   <title>My First Web Site</title>
   <style>
-    h2 { font-weight:bolder; color:red; }
+    h2 { font-weight: bolder; color: red; }
+    #dog {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      width: 100px;
+      transition: 0.1s ease;
+    }
   </style>
   <script>
-     alert('Hello World');
+    window.onload = () => {
+      alert('Hello World');
+
+      const dog = document.getElementById("dog");
+      let posX = 100;
+      let posY = 100;
+      const step = 10;
+
+      document.addEventListener("keydown", (e) => {
+        switch (e.key) {
+          case "ArrowUp":
+            posY -= step;
+            break;
+          case "ArrowDown":
+            posY += step;
+            break;
+          case "ArrowLeft":
+            posX -= step;
+            break;
+          case "ArrowRight":
+            posX += step;
+            break;
+        }
+        dog.style.left = posX + "px";
+        dog.style.top = posY + "px";
+      });
+    }
   </script>
 </head>
 <body>
   <h2>Hello World</h2>
   <h3>처음 만드는 웹 페이지</h3>
+
+  <!-- 🐶 강아지 이미지 (Unsplash 이미지 링크 사용) -->
+  <img id="dog" src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d" alt="dog">
 </body>
 </html>
