@@ -1,6 +1,21 @@
-{
-    "userId": 1,
-    "id": 1,
-    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Example</title>
+</head>
+<body>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>phone number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Rows can be dynamically added here -->
+    </tbody>
+  </table>
+</body>
+</html>
